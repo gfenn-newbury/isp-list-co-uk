@@ -1,3 +1,9 @@
 site_name: ISP List UK
 theme:
   name: material
+
+markdown_extensions:
+  - tables
+
+extra_css:
+  - css/tables.css
