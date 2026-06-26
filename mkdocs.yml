@@ -1,9 +1,35 @@
 site_name: ISP List UK
 theme:
   name: material
+  features:
+    - navigation.sections
+
+repo_url: https://github.com/gfenn-newbury/isp-list-co-uk
+repo_name: gfenn-newbury/isp-list-uk
 
 markdown_extensions:
   - tables
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
 extra_css:
   - css/tables.css
+
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
+
+nav:
+  - index.md
+  - What is CG-NAT?: articles/cgnat.md
+  - ISP Overview: isp-overview.md
+  - Network Providers:
+    - Openreach: network-providers/openreach.md
+  - ISPs:
+    - Trooli: isps/trooli.md
+
+  
